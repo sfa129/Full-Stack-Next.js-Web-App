@@ -5,12 +5,12 @@ const nextConfig = {
         serverComponentsExternalPackages: ["mongoose"],
     },
     images: {
-        domains: ['1h3.googleusercontent.com'],
+        domains: ['lh3.googleusercontent.com'],
     },
-    wepack(config) {
+    webpack(config) {
         config.experiments = {
             ...config.experiments,
-            toplevelAwait:true,
+            topLevelAwait:true,
         }
         return config
     }
